@@ -1,63 +1,25 @@
-Credit goes to The Markdown Guide!
+# graphicsfuck
 
-Heading
-H1
-H2
-H3
-Bold
-bold text
+graphicsfuck is a coding language similar to brainfuck. Basicly graphics smashed with brainfuck! 
 
-Italic
-italicized text
+## how does it work?
 
-Blockquote
-blockquote
+everything apply in brainfuck apply to graphicsfuck aswell.
 
-Ordered List
-First item
-Second item
-Third item
-Unordered List
-First item
-Second item
-Third item
-Code
-code
+there are atleast `196,613` bytes of memory `196,608` bytes for image buffer, `2` bytes for the postion teleport location (note that the postion is read from left to right), `1` byte for the teleport button, `1` byte for the render button, `1` byte for the settings count, 
 
-Horizontal Rule
-Link
-Markdown Guide
-
-Image
-alt text
-
-Extended Syntax
-These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
-
-Table
-Syntax	Description
-Paragraph	Text
-Header	Title
-Fenced Code Block
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-Footnote
-Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
-
-Heading ID
-My Great Heading {#custom-id}
-Definition List
-term : definition
-
-Strikethrough
-The world is flat.
-
-Task List
-[x] Write the press release
-[ ] Update the website
-[ ] Contact the media
+#### layout:
+`[image buffer][postion teleport location][teleport button][render button][settings count][additional memory for computing]`
+#### attributes:
+| name | byte counts |
+| ---- | ----------- |
+| image buffer | `196,608` |
+| postion teleport location | `2` |
+| teleport button | `1` |
+| render button | `1` |
+| settings count | `1` |
+#### meaning:
+setting count : the amount of bytes between settings count to the image buffer. 
+render button : used to tell the window when to render data on the image buffer 
+teleport button : used to teleport the pointer to the according pixel in the imageBuffer based on the  postion teleport location
+postion teleport location : the xy coordinate on the screen used to teleport the pointer (note that the postion is read from left to right)
