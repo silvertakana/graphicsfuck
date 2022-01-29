@@ -2,7 +2,8 @@
 
 graphicsfuck is a coding language similar to brainfuck. Basicly graphics smashed with brainfuck! 
 
-[![Alternate Text]({image-url})]([link](https://www.youtube.com/watch?v=GsIUcM05eXU) "Link Title")
+here is an introduction:  
+https://www.youtube.com/watch?v=GsIUcM05eXU
 
 
 ## install
